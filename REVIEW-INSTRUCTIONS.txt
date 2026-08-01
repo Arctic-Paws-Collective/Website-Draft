@@ -1,0 +1,17 @@
+ARCTIC PAWS COLLECTIVE — VERSION 1.0 REVIEW
+
+1. Extract the entire ZIP folder.
+2. Keep all files and the assets folder together.
+3. Double-click index.html and open it in Chrome.
+
+New in Version 1.0:
+- Premium cinematic homepage
+- Visible review version banner
+- Meet the Dogs section
+- Trail Journal section
+- Expanded sponsor presentation
+- Donation and sponsorship calls to action
+- Mobile-friendly navigation
+- Individual sponsor profile pages
+
+All names, statistics, sponsor offers, and dog profiles are sample content for review.
