@@ -153,20 +153,7 @@
   display: none;
 }
 
-.hero-scroll {
-  position: absolute;
-  z-index: 3;
-  left: 50%;
-  bottom: 28px;
-  transform: translateX(-50%);
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  font-size: 0.72rem;
-  font-weight: 800;
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.65);
-}
+
 
 .hero-focus-grid {
   position: relative;
