@@ -677,14 +677,14 @@
     display: none;
   }
 
-  .hero-mission-hotspot {
-    left: 5%;
-    top: 69%;
-    width: 24%;
-    height: 9%;
-    min-width: 88px;
-    min-height: 30px;
-  }
+ .hero-mission-hotspot {
+  left: 2.6%;
+  top: 85.8%;
+  width: 18.5%;
+  height: 10%;
+  min-width: 72px;
+  min-height: 30px;
+}
 
   .hero-focus-grid {
     grid-template-columns: minmax(0, 1fr);
