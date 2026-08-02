@@ -62,97 +62,155 @@
 
 .v1-hero {
   position: relative;
-  display: block;
+  display: flex;
+  align-items: center;
   min-height: 100svh;
-  padding: 0;
+  padding: 92px clamp(24px, 7vw, 110px) 80px;
   overflow: hidden;
   background: #061b24;
+  color: #fff;
 }
 
 .v1-hero > img {
   position: absolute;
   inset: 0;
-
   width: 100%;
   height: 100%;
-
   object-fit: cover;
 
-  /* Move the artwork slightly downward */
-  object-position: center 20px;
+  /*
+    The original artwork includes text on its left side.
+    Shifting the image toward the right keeps the dogs visible while
+    the real HTML heading and button occupy the left side.
+  */
+  object-position: 68% center;
 }
 
 .v1-hero-shade {
   position: absolute;
   inset: 0;
+  z-index: 1;
   pointer-events: none;
   background:
     linear-gradient(
-      180deg,
-      rgba(4, 18, 25, 0.18) 0%,
-      rgba(4, 18, 25, 0.02) 48%,
-      rgba(4, 18, 25, 0.42) 100%
+      90deg,
+      rgba(4, 18, 25, 0.97) 0%,
+      rgba(4, 18, 25, 0.88) 30%,
+      rgba(4, 18, 25, 0.48) 52%,
+      rgba(4, 18, 25, 0.10) 78%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(4, 18, 25, 0.42) 0%,
+      transparent 48%
     );
 }
 
-.v1-hero-content,
-.hero-proof {
-  display: none;
+.v1-hero-content {
+  position: relative;
+  z-index: 2;
+  width: min(680px, 100%);
+  margin: 0;
 }
 
-/* Invisible clickable area over the embedded OUR MISSION button */
-.hero-mission-hotspot {
-  position: absolute;
-  z-index: 200;
-  display: block;
-  left: 3.2%;
-  top: 65.8%;
-  width: 15%;
-  height: 7.5%;
-  background: transparent;
-  border: 0;
-  cursor: pointer;
+.v1-hero-content h1 {
+  max-width: 680px;
+  margin-bottom: 24px;
+  color: #fff;
+  font-size: clamp(3.2rem, 6.4vw, 6.7rem);
+  line-height: 0.92;
+  letter-spacing: -0.055em;
+  text-wrap: balance;
+}
+
+.v1-hero-content > p:not(.eyebrow) {
+  max-width: 620px;
+  margin-bottom: 0;
+  color: #d7e6e5;
+  font-size: clamp(1.04rem, 1.7vw, 1.28rem);
+}
+
+.v1-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 34px;
+}
+
+.v1-mission-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  min-width: 205px;
+  padding: 15px 24px;
+  overflow: hidden;
+  color: #071e28;
+  background: #d9a75f;
+  border: 1px solid rgba(255, 235, 199, 0.75);
+  border-radius: 999px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.28);
+  font-weight: 800;
+  letter-spacing: 0.04em;
   text-decoration: none;
-  pointer-events: auto;
+  cursor: pointer;
+  transition:
+    transform 0.24s ease,
+    background-color 0.24s ease,
+    border-color 0.24s ease,
+    box-shadow 0.24s ease;
 }
 
-.hero-mission-hotspot:focus-visible {
-  outline: 3px solid #d9a75f;
-  outline-offset: 3px;
-}
-.hero-mission-hotspot::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-
-    border-radius: 999px;
-
-    background: rgba(255,255,255,.08);
-
-    opacity: 0;
-
-    transform: translate(-8px, 5px);
-
-    box-shadow: 0 0 0 rgba(217,167,95,0);
-
-    transition:
-        opacity .25s ease,
-        box-shadow .25s ease,
-        transform .25s ease;
+.v1-mission-button::before {
+  position: absolute;
+  inset: -45%;
+  content: "";
+  pointer-events: none;
+  background: radial-gradient(
+    circle,
+    rgba(255, 244, 215, 0.72) 0%,
+    rgba(217, 167, 95, 0.18) 36%,
+    transparent 67%
+  );
+  opacity: 0;
+  transform: scale(0.7);
+  transition:
+    opacity 0.24s ease,
+    transform 0.24s ease;
 }
 
-.hero-mission-hotspot:hover::after,
-.hero-mission-hotspot:focus-visible::after {
+.v1-mission-button > * {
+  position: relative;
+  z-index: 1;
+}
 
-  opacity: 1;
-
-  background: rgba(255,255,255,0.12);
-
+.v1-mission-button:hover,
+.v1-mission-button:focus-visible {
+  transform: translateY(-3px) scale(1.015);
+  background: #efbd72;
+  border-color: #ffe1a6;
   box-shadow:
-      0 0 0 2px rgba(217,167,95,.55),
-      0 0 20px rgba(217,167,95,.35);
-
+    0 0 14px rgba(217, 167, 95, 0.95),
+    0 0 34px rgba(217, 167, 95, 0.62),
+    0 14px 30px rgba(0, 0, 0, 0.38);
 }
+
+.v1-mission-button:hover::before,
+.v1-mission-button:focus-visible::before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.v1-mission-button:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 5px;
+}
+
+.v1-mission-button:active {
+  transform: translateY(-1px) scale(0.995);
+}
+
 /* ---------- Four focus cards ---------- */
 
 .hero-focus-grid {
@@ -563,11 +621,20 @@
   }
 
   .site-header {
-    top: 50px !important;
+    top: 0 !important;
   }
 
   .v1-hero {
-    min-height: 72svh;
+    min-height: 82svh;
+    padding-top: 110px;
+  }
+
+  .v1-hero > img {
+    object-position: 62% center;
+  }
+
+  .v1-hero-content {
+    width: min(610px, 100%);
   }
 
   .hero-focus-grid {
@@ -666,35 +733,51 @@
   }
 
   .v1-hero {
-    min-height: 0;
-    height: auto;
-    margin-top: 58px;
-    padding: 0;
-    overflow: visible;
+    min-height: 100svh;
+    margin-top: 0;
+    padding: 108px 22px 64px;
+    overflow: hidden;
   }
 
   .v1-hero > img {
-    position: relative;
-    inset: auto;
-    display: block;
+    position: absolute;
+    inset: 0;
     width: 100%;
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-    object-position: center;
+    max-width: none;
+    height: 100%;
+    object-fit: cover;
+    object-position: 70% center;
   }
 
   .v1-hero-shade {
-    display: none;
+    display: block;
+    background:
+      linear-gradient(
+        180deg,
+        rgba(4, 18, 25, 0.84) 0%,
+        rgba(4, 18, 25, 0.66) 45%,
+        rgba(4, 18, 25, 0.88) 100%
+      );
   }
 
-  .hero-mission-hotspot {
-    left: 5%;
-    top: 69%;
-    width: 24%;
-    height: 9%;
-    min-width: 88px;
-    min-height: 30px;
+  .v1-hero-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .v1-hero-content h1 {
+    max-width: 100%;
+    font-size: clamp(2.8rem, 14vw, 4.5rem);
+    line-height: 0.94;
+  }
+
+  .v1-hero-content > p:not(.eyebrow) {
+    font-size: 1rem;
+  }
+
+  .v1-mission-button {
+    width: 100%;
+    max-width: 260px;
   }
 
   .hero-focus-grid {
