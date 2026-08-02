@@ -5,32 +5,40 @@
 
 /* ---------- Review banner and header offset ---------- */
 
-.review-banner {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 18px;
-  padding: 8px 18px;
-  background: #d9a75f;
-  color: #071e28;
-  font-size: 0.76rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-.review-banner span {
-  opacity: 0.78;
-}
-
 .site-header {
-  top: 34px !important;
+  top: 0 !important;
+  padding: 10px clamp(18px, 3vw, 42px) !important;
+  min-height: 58px;
+}
+.brand {
+  gap: 9px;
 }
 
+.brand-badge {
+  width: 36px;
+  height: 36px;
+  font-size: 0.78rem;
+}
+
+.brand strong {
+  font-size: 0.92rem;
+}
+
+.brand small {
+  font-size: 0.48rem;
+}
+
+.site-nav {
+  gap: 18px;
+}
+
+.site-nav a {
+  font-size: 0.82rem;
+}
+
+.nav-cta {
+  padding: 8px 13px;
+}
 /* ---------- Hero ---------- */
 
 .v1-hero {
