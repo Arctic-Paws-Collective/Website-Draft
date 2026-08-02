@@ -92,7 +92,12 @@
 .hero-mission-hotspot::after {
   content: "";
   position: absolute;
-  inset: 0;
+   
+  top: 2px;
+  bottom: -2px;
+  left: -4px;
+  right: 2px;
+   
   border-radius: 999px;
 
   background: rgba(255,255,255,0.06);
