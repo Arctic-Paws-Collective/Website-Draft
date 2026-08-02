@@ -249,3 +249,114 @@
     margin-bottom: 10px;
   }
 }
+/* MOBILE: SHOW THE COMPLETE HERO IMAGE AND FULL-WIDTH FOCUS BOXES */
+
+html,
+
+body {
+
+  width: 100%;
+
+  max-width: 100%;
+
+  margin: 0;
+
+  overflow-x: hidden;
+
+}
+
+*,
+
+*::before,
+
+*::after {
+
+  box-sizing: border-box;
+
+}
+
+@media (max-width: 640px) {
+
+  .v1-hero {
+
+    min-height: 0;
+
+    height: auto;
+
+    padding: 0;
+
+    overflow: visible;
+
+    background: #061b24;
+
+  }
+
+  .v1-hero > img {
+
+    position: relative;
+
+    inset: auto;
+
+    display: block;
+
+    width: 100%;
+
+    max-width: 100%;
+
+    height: auto;
+
+    object-fit: contain;
+
+    object-position: center;
+
+  }
+
+  .v1-hero-shade {
+
+    display: none;
+
+  }
+
+  .hero-focus-grid {
+
+    display: grid;
+
+    grid-template-columns: minmax(0, 1fr);
+
+    width: 100%;
+
+    max-width: 100%;
+
+    margin: 0;
+
+    overflow: hidden;
+
+  }
+
+  .hero-focus-card {
+
+    width: 100%;
+
+    max-width: 100%;
+
+    min-width: 0;
+
+    min-height: auto;
+
+    margin: 0;
+
+    padding: 26px 22px;
+
+    border-right: 0;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+
+  }
+
+  .hero-focus-card:last-child {
+
+    border-bottom: 0;
+
+  }
+
+}
