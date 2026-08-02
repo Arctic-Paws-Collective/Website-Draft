@@ -16,3 +16,20 @@ document.querySelectorAll('.tracked-link').forEach(link=>{
     console.log('Sponsor interaction recorded:',sponsor,action);
   });
 });
+if ("scrollRestoration" in history) {
+
+  history.scrollRestoration = "manual";
+
+}
+
+window.addEventListener("load", function () {
+
+  if (window.location.hash === "#focus") {
+
+    history.replaceState(null, "", window.location.pathname);
+
+  }
+
+  window.scrollTo(0, 0);
+
+});
