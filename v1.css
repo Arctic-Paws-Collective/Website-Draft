@@ -5,37 +5,54 @@
 
 /* ---------- Review banner and header offset ---------- */
 
+/* ---------- Refined Desktop Header ---------- */
+
 .site-header {
   top: 0 !important;
-  padding: 8px clamp(16px, 2.8vw, 36px) !important;
-  min-height: 52px;
-  background: rgba(5,24,32,.82);
-  backdrop-filter: blur(12px);
+  min-height: 50px;
+
+  padding: 8px clamp(18px, 2.8vw, 36px);
+
+  background: rgba(6,27,36,.82);
+  backdrop-filter: blur(14px);
+
+  transition: all .25s ease;
 }
+
 .brand {
-  gap: 9px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
+/* Slightly larger logo badge */
 .brand-badge {
-  width: 34px;
-  height: 34px;
-  font-size: 0.74rem;
+  width: 40px;
+  height: 40px;
+
+  font-size: .82rem;
+
+  border: 1px solid rgba(255,255,255,.45);
 }
 
+/* Slightly smaller text */
 .brand strong {
-  font-size: 0.88rem;
+  font-size: .90rem;
 }
 
 .brand small {
-  font-size: 0.46rem;
+  font-size: .46rem;
+  letter-spacing: .22em;
 }
 
+/* Tighter navigation */
 .site-nav {
   gap: 16px;
 }
 
 .site-nav a {
-  font-size: 0.80rem;
+  font-size: .79rem;
+  font-weight: 700;
 }
 
 .nav-cta {
