@@ -545,3 +545,21 @@ body {
 .v1-hero::after {
   pointer-events: none;
 }
+.mission-text-link {
+  display: inline-block;
+  position: relative;
+  z-index: 20;
+  margin-bottom: 18px;
+  color: #3aa6aa;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  text-decoration: underline;
+  text-transform: uppercase;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.mission-text-link:hover {
+  color: #17616a;
+}
