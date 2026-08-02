@@ -374,4 +374,128 @@ body {
         top:0 !important;
 
     }
+/* MOBILE HEADER CLEANUP */
 
+@media (max-width: 640px) {
+
+  .review-banner {
+
+    display: none;
+
+  }
+
+  .site-header {
+
+    top: 0 !important;
+
+    min-height: 58px;
+
+    padding: 8px 14px;
+
+  }
+
+  .brand {
+
+    gap: 8px;
+
+  }
+
+  .brand-badge {
+
+    width: 36px;
+
+    height: 36px;
+
+    font-size: 0.8rem;
+
+  }
+
+  .brand strong {
+
+    font-size: 0.9rem;
+
+  }
+
+  .brand small {
+
+    font-size: 0.5rem;
+
+  }
+
+  .nav-toggle {
+
+    display: block;
+
+    padding: 6px 8px;
+
+    font-size: 1.35rem;
+
+    cursor: pointer;
+
+  }
+
+  .site-nav {
+
+    display: none;
+
+    position: absolute;
+
+    top: 58px;
+
+    left: 12px;
+
+    right: 12px;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 0;
+
+    padding: 12px;
+
+    background: rgba(6, 27, 36, 0.98);
+
+    border-radius: 14px;
+
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.28);
+
+  }
+
+  .site-nav.open {
+
+    display: flex;
+
+  }
+
+  .site-nav a {
+
+    width: 100%;
+
+    padding: 12px 10px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  }
+
+  .site-nav a:last-child {
+
+    border-bottom: 0;
+
+  }
+
+  .nav-cta {
+
+    margin-top: 6px;
+
+    text-align: center;
+
+  }
+
+  .v1-hero {
+
+    margin-top: 58px;
+
+  }
+
+}
