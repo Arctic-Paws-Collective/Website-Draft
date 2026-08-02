@@ -613,3 +613,44 @@ body {
     }
 
 }
+/* Invisible clickable area over the embedded Our Mission button */
+
+.hero-mission-hotspot {
+  position: absolute !important;
+  z-index: 100 !important;
+
+  left: 6%;
+  top: 68%;
+
+  width: 190px;
+  height: 54px;
+
+  display: block !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 999px;
+
+  text-decoration: none;
+  cursor: pointer;
+  pointer-events: auto !important;
+}
+
+.hero-mission-hotspot span {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .hero-mission-hotspot {
+    left: 5%;
+    top: 67%;
+
+    width: 36%;
+    max-width: 160px;
+    height: 42px;
+  }
+}
