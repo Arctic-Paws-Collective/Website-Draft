@@ -7,37 +7,39 @@
 
 .site-header {
   top: 0 !important;
-  padding: 10px clamp(18px, 3vw, 42px) !important;
-  min-height: 58px;
+  padding: 8px clamp(16px, 2.8vw, 36px) !important;
+  min-height: 52px;
+  background: rgba(5,24,32,.82);
+  backdrop-filter: blur(12px);
 }
 .brand {
   gap: 9px;
 }
 
 .brand-badge {
-  width: 36px;
-  height: 36px;
-  font-size: 0.78rem;
+  width: 34px;
+  height: 34px;
+  font-size: 0.74rem;
 }
 
 .brand strong {
-  font-size: 0.92rem;
+  font-size: 0.88rem;
 }
 
 .brand small {
-  font-size: 0.48rem;
+  font-size: 0.46rem;
 }
 
 .site-nav {
-  gap: 18px;
+  gap: 16px;
 }
 
 .site-nav a {
-  font-size: 0.82rem;
+  font-size: 0.80rem;
 }
 
 .nav-cta {
-  padding: 8px 13px;
+  padding: 7px 12px;
 }
 /* ---------- Hero ---------- */
 
