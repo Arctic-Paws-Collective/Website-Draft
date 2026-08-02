@@ -359,4 +359,19 @@ body {
 
   }
 
-}
+}/* Hide review banner on phones */
+
+@media (max-width:640px){
+
+    .review-banner{
+
+        display:none;
+
+    }
+
+    .site-header{
+
+        top:0 !important;
+
+    }
+
