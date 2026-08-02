@@ -563,94 +563,44 @@ body {
 .mission-text-link:hover {
   color: #17616a;
 }
-  /* Clickable Mission button on Hero */
+/* ---------- OUR MISSION HOTSPOT ---------- */
 
-.hero-mission-button{
+.v1-hero{
+    position:relative;
+}
+
+.hero-mission-hotspot{
     position:absolute;
-    left:7%;
-    top:18%;
+    display:block;
 
-    z-index:20;
+    /* Desktop position */
+    left:4.8%;
+    top:69.5%;
 
-    display:inline-block;
+    width:15%;
+    height:7.5%;
 
-    padding:14px 22px;
+    z-index:200;
 
-    border:2px solid rgba(255,255,255,.75);
-    border-radius:999px;
-
-    background:rgba(6,27,36,.55);
-    backdrop-filter:blur(10px);
-
-    color:#fff;
+    background:transparent;
+    border:0;
+    cursor:pointer;
     text-decoration:none;
-
-    font-family:Arial,Helvetica,sans-serif;
-    font-weight:700;
-    letter-spacing:.08em;
-    text-transform:uppercase;
-
-    transition:.25s ease;
 }
 
-.hero-mission-button:hover{
-    background:#d9a75f;
-    color:#071e28;
-    transform:translateY(-2px);
-}
+@media (max-width:640px){
 
-@media(max-width:640px){
+    .hero-mission-hotspot{
 
-    .hero-mission-button{
+        /* Mobile position */
+        left:5%;
+        top:69%;
 
-        left:6%;
-        top:14%;
-
-        font-size:.72rem;
-
-        padding:10px 16px;
+        width:24%;
+        height:9%;
 
     }
 
 }
-/* Invisible clickable area over the embedded Our Mission button */
 
-.hero-mission-hotspot {
-  position: absolute !important;
-  z-index: 100 !important;
 
-  left: 6%;
-  top: 68%;
-
-  width: 190px;
-  height: 54px;
-
-  display: block !important;
-  background: transparent !important;
-  border: 0 !important;
-  border-radius: 999px;
-
-  text-decoration: none;
-  cursor: pointer;
-  pointer-events: auto !important;
-}
-
-.hero-mission-hotspot span {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip-path: inset(50%);
-  white-space: nowrap;
-}
-
-@media (max-width: 640px) {
-  .hero-mission-hotspot {
-    left: 5%;
-    top: 67%;
-
-    width: 36%;
-    max-width: 160px;
-    height: 42px;
-  }
-}
