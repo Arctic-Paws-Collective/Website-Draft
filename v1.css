@@ -509,3 +509,39 @@ body {
 .mission-link:hover {
   text-decoration: underline;
 }
+/* MAKE MISSION LINK CLICKABLE */
+
+.editorial-intro {
+  position: relative;
+  z-index: 10;
+}
+
+.mission-heading-link {
+  position: relative;
+  z-index: 20;
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.mission-heading-link .eyebrow {
+  display: inline-block;
+  pointer-events: auto;
+}
+
+.mission-heading-link:hover .eyebrow {
+  text-decoration: underline;
+}
+
+.mission-heading-link:hover h2 {
+  color: #2f7f83;
+}
+
+/* Prevent decorative hero layers from blocking content below */
+.v1-hero-shade,
+.v1-hero::before,
+.v1-hero::after {
+  pointer-events: none;
+}
