@@ -74,8 +74,8 @@
   position: absolute;
   z-index: 200;
   display: block;
-  left: 3.6%;
-  top: 66.4%;
+  left: 3.2%;
+  top: 65.8%;
   width: 15%;
   height: 7.5%;
   background: transparent;
@@ -89,7 +89,36 @@
   outline: 3px solid #d9a75f;
   outline-offset: 3px;
 }
+.hero-mission-hotspot::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
 
+  background: rgba(255,255,255,0.06);
+
+  box-shadow: 0 0 0 rgba(217,167,95,0);
+
+  opacity: 0;
+
+  transition:
+      opacity .25s ease,
+      box-shadow .25s ease,
+      background .25s ease;
+}
+
+.hero-mission-hotspot:hover::after,
+.hero-mission-hotspot:focus-visible::after {
+
+  opacity: 1;
+
+  background: rgba(255,255,255,0.12);
+
+  box-shadow:
+      0 0 0 2px rgba(217,167,95,.55),
+      0 0 20px rgba(217,167,95,.35);
+
+}
 /* ---------- Four focus cards ---------- */
 
 .hero-focus-grid {
