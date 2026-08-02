@@ -499,3 +499,13 @@ body {
   }
 
 }
+.mission-link {
+  display: inline-block;
+  color: #3aa6aa;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mission-link:hover {
+  text-decoration: underline;
+}
