@@ -72,10 +72,14 @@
 .v1-hero > img {
   position: absolute;
   inset: 0;
+
   width: 100%;
   height: 100%;
+
   object-fit: cover;
-  object-position: center;
+
+  /* Move the artwork slightly downward */
+  object-position: center 20px;
 }
 
 .v1-hero-shade {
