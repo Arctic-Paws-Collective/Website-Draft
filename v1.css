@@ -1,0 +1,764 @@
+/* =========================================================
+   ARCTIC PAWS COLLECTIVE — CLEAN v1.css
+   Consolidated review build
+   ========================================================= */
+
+/* ---------- Review banner and header offset ---------- */
+
+/* ---------- Refined Desktop Header ---------- */
+
+.site-header {
+  top: 0 !important;
+  min-height: 50px;
+
+  padding: 8px clamp(18px, 2.8vw, 36px);
+
+  background: rgba(6,27,36,.82);
+  backdrop-filter: blur(14px);
+
+  transition: all .25s ease;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Slightly larger logo badge */
+.brand-badge {
+  width: 40px;
+  height: 40px;
+
+  font-size: .82rem;
+
+  border: 1px solid rgba(255,255,255,.45);
+}
+
+/* Slightly smaller text */
+.brand strong {
+  font-size: .90rem;
+}
+
+.brand small {
+  font-size: .46rem;
+  letter-spacing: .22em;
+}
+
+/* Tighter navigation */
+.site-nav {
+  gap: 16px;
+}
+
+.site-nav a {
+  font-size: .79rem;
+  font-weight: 700;
+}
+
+.nav-cta {
+  padding: 7px 12px;
+}
+/* ---------- Hero ---------- */
+
+.v1-hero {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: 0;
+  height: auto;
+  margin-top: 58px;
+  padding: 0;
+  overflow: hidden;
+  background: #061b24;
+}
+
+.v1-hero > img {
+  position: relative;
+  inset: auto;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+}
+
+.v1-hero-shade {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(4, 18, 25, 0.18) 0%,
+      rgba(4, 18, 25, 0.02) 48%,
+      rgba(4, 18, 25, 0.42) 100%
+    );
+}
+
+.v1-hero-content,
+.hero-proof {
+  display: none;
+}
+
+.hero-mission-hotspot {
+  position: absolute;
+  z-index: 200;
+  display: block;
+  left: 2.6%;
+  top: 85.8%;
+  width: 15.8%;
+  height: 10%;
+  background: transparent;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  pointer-events: auto;
+}
+
+.hero-mission-hotspot::after {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  border-radius: 8px;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow:
+    0 0 0 2px rgba(80, 190, 255, .72),
+    0 0 18px rgba(45, 161, 255, .82),
+    0 0 36px rgba(45, 161, 255, .55);
+  transition: opacity .2s ease;
+}
+
+.hero-mission-hotspot:hover::after,
+.hero-mission-hotspot:focus-visible::after {
+  opacity: 1;
+}
+
+.hero-mission-hotspot:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 5px;
+}
+
+/* ---------- Four focus cards ---------- */
+
+.hero-focus-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: #071e28;
+  color: #fff;
+}
+
+.hero-focus-card {
+  width: 100%;
+  min-width: 0;
+  min-height: 220px;
+  margin: 0;
+  padding: 34px clamp(22px, 3vw, 42px);
+  color: #fff;
+  text-decoration: none;
+  border-right: 1px solid rgba(255, 255, 255, 0.12);
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.hero-focus-card:last-child {
+  border-right: 0;
+}
+
+.hero-focus-card:hover {
+  background: rgba(255, 255, 255, 0.07);
+  transform: translateY(-4px);
+}
+
+.hero-focus-card .focus-number {
+  display: block;
+  margin-bottom: 26px;
+  color: #9bdad3;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.hero-focus-card strong {
+  display: block;
+  margin-bottom: 12px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.25rem, 1.8vw, 1.65rem);
+  line-height: 1.15;
+}
+
+.hero-focus-card > span:last-child {
+  display: block;
+  color: #b9ced0;
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+/* ---------- Homepage editorial sections ---------- */
+
+.editorial-intro {
+  position: relative;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 90px;
+}
+
+.immersive-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  background: #071e28;
+}
+
+.immersive-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 520px;
+  padding: 48px;
+  overflow: hidden;
+  border-radius: 28px;
+  color: #fff;
+}
+
+.immersive-card::before {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: linear-gradient(
+    0deg,
+    rgba(3, 18, 25, 0.92),
+    rgba(3, 18, 25, 0.12)
+  );
+}
+
+.immersive-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.immersive-card a {
+  color: #a5ded7;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.care-card-v1 {
+  background: linear-gradient(135deg, #315e66, #0a2933);
+}
+
+.dogs-card-v1 {
+  background: linear-gradient(135deg, #8c6b47, #173c45);
+}
+
+/* ---------- Dog cards and profiles ---------- */
+
+.dog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.dog-card {
+  padding: 18px;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+}
+
+.dog-portrait,
+.profile-photo {
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-family: Georgia, serif;
+  font-weight: 700;
+  border-radius: 20px;
+}
+
+.dog-portrait {
+  height: 240px;
+  margin-bottom: 20px;
+  font-size: 4rem;
+}
+
+.dog-one {
+  background: linear-gradient(145deg, #758f9d, #173b47);
+}
+
+.dog-two {
+  background: linear-gradient(145deg, #b18c61, #284d55);
+}
+
+.dog-three {
+  background: linear-gradient(145deg, #55737c, #102c35);
+}
+
+.dog-four {
+  background: linear-gradient(145deg, #7ca49d, #1f4850);
+}
+
+.dogs-page-hero {
+  background: linear-gradient(135deg, #0c3340, #75634f);
+}
+
+.dog-profile-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.profile-card {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 25px;
+  padding: 22px;
+  background: #fff;
+  border-radius: 26px;
+  box-shadow: var(--shadow);
+}
+
+.profile-photo {
+  min-height: 330px;
+  font-size: 5rem;
+}
+
+.sponsor-chip {
+  display: inline-block;
+  padding: 8px 12px;
+  background: #eaf4f2;
+  color: #1a555b;
+  font-size: 0.76rem;
+  font-weight: 800;
+  border-radius: 999px;
+}
+
+/* ---------- Trail Journal ---------- */
+
+.journal-feature {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  background: #174c55;
+  color: #fff;
+}
+
+.journal-feature > div:first-child p {
+  color: #cce0df;
+}
+
+.journal-stack {
+  display: grid;
+  gap: 14px;
+}
+
+.journal-stack article {
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+}
+
+.journal-stack span {
+  color: #9ed7d1;
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.journal-page-hero {
+  background: linear-gradient(135deg, #071e28, #27656d);
+}
+
+.journal-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.journal-card {
+  padding: 32px;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+}
+
+.featured-journal {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 330px;
+  background: linear-gradient(135deg, #123943, #2e6d73);
+  color: #fff;
+}
+
+.journal-card a {
+  color: #2f7f83;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.featured-journal a {
+  color: #a6d8d3;
+}
+
+.sponsored-label {
+  border-top: 5px solid #d9a75f;
+}
+
+/* ---------- Partners, quote, and CTA ---------- */
+
+.partner-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.partner-strip a {
+  display: grid;
+  place-items: center;
+  min-height: 130px;
+  padding: 20px;
+  background: #fff;
+  font-family: Georgia, serif;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+}
+
+.partner-strip .partner-join {
+  background: #d9a75f;
+}
+
+.quote-v1 {
+  background: #071e28;
+  color: #fff;
+  text-align: center;
+}
+
+.quote-v1 blockquote {
+  max-width: 1100px;
+  margin: auto;
+  font-family: Georgia, serif;
+  font-size: clamp(2rem, 4.6vw, 4.4rem);
+}
+
+.cta-v1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  background: #eaf4f2;
+}
+
+.dark-outline {
+  color: #193d46 !important;
+  border-color: #193d46 !important;
+}
+
+/* ---------- Mission links ---------- */
+
+.mission-link,
+.mission-heading-link,
+.mission-text-link {
+  position: relative;
+  z-index: 20;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.mission-link {
+  display: inline-block;
+  color: #3aa6aa;
+  text-decoration: none;
+}
+
+.mission-link:hover {
+  text-decoration: underline;
+}
+
+.mission-heading-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.mission-heading-link .eyebrow {
+  display: inline-block;
+  pointer-events: auto;
+}
+
+.mission-heading-link:hover .eyebrow {
+  text-decoration: underline;
+}
+
+.mission-heading-link:hover h2 {
+  color: #2f7f83;
+}
+
+.mission-text-link {
+  display: inline-block;
+  margin-bottom: 18px;
+  color: #3aa6aa;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.mission-text-link:hover {
+  color: #17616a;
+}
+
+/* ---------- Tablet ---------- */
+
+@media (max-width: 980px) {
+  .editorial-intro,
+  .immersive-grid,
+  .journal-feature,
+  .dog-profile-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dog-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .partner-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .cta-v1 {
+    display: block;
+  }
+
+  .cta-actions {
+    margin-top: 25px;
+  }
+
+  .site-header {
+    top: 50px !important;
+  }
+
+  .v1-hero {
+    min-height: 0;
+    height: auto;
+  }
+
+  .hero-focus-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero-focus-card {
+    min-height: 190px;
+  }
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 640px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  .review-banner {
+    display: none;
+  }
+
+  .site-header {
+    top: 0 !important;
+    min-height: 58px;
+    padding: 8px 14px;
+  }
+
+  .brand {
+    gap: 8px;
+  }
+
+  .brand-badge {
+    width: 36px;
+    height: 36px;
+    font-size: 0.8rem;
+  }
+
+  .brand strong {
+    font-size: 0.9rem;
+  }
+
+  .brand small {
+    font-size: 0.5rem;
+  }
+
+  .nav-toggle {
+    display: block;
+    padding: 6px 8px;
+    font-size: 1.35rem;
+    cursor: pointer;
+  }
+
+  .site-nav {
+    position: absolute;
+    top: 58px;
+    left: 12px;
+    right: 12px;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 12px;
+    background: rgba(6, 27, 36, 0.98);
+    border-radius: 14px;
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.28);
+  }
+
+  .site-nav.open {
+    display: flex;
+  }
+
+  .site-nav a {
+    width: 100%;
+    padding: 12px 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .site-nav a:last-child {
+    border-bottom: 0;
+  }
+
+  .nav-cta {
+    margin-top: 6px;
+    text-align: center;
+  }
+
+  .v1-hero {
+    min-height: 0;
+    height: auto;
+    margin-top: 58px;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .v1-hero > img {
+    position: relative;
+    inset: auto;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .v1-hero-shade {
+    display: none;
+  }
+
+ .hero-mission-hotspot {
+  left: 2.6%;
+  top: 85.8%;
+  width: 18.5%;
+  height: 10%;
+  min-width: 72px;
+  min-height: 30px;
+}
+
+  .hero-focus-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hero-focus-card {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    min-height: auto;
+    margin: 0;
+    padding: 26px 22px;
+    border-right: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .hero-focus-card:last-child {
+    border-bottom: 0;
+  }
+
+  .hero-focus-card .focus-number {
+    margin-bottom: 10px;
+  }
+
+  .dog-grid,
+  .partner-strip,
+  .journal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-card {
+    grid-template-columns: 1fr;
+  }
+
+  .journal-card,
+  .featured-journal {
+    grid-column: auto;
+  }
+}
+
+
+/* =========================================================
+   HOME PAGE REVISION 2
+   - Keep hero hotspot linked to mission.html
+   - Replace visible hero label with "Learn More"
+   ========================================================= */
+
+.hero-mission-hotspot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background: rgba(6, 27, 36, 0.90);
+  border: 1px solid rgba(255,255,255,0.55);
+  font-size: clamp(0.64rem, 0.9vw, 0.82rem);
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.hero-mission-hotspot::before {
+  content: "Learn More";
+  position: relative;
+  z-index: 2;
+}
+
+.hero-mission-hotspot:hover,
+.hero-mission-hotspot:focus-visible {
+  background: rgba(11, 62, 75, 0.96);
+}
+
+@media (max-width: 640px) {
+  .hero-mission-hotspot {
+    font-size: 0.64rem;
+    letter-spacing: 0.08em;
+  }
+}
