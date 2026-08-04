@@ -745,11 +745,7 @@
   text-transform: uppercase;
 }
 
-.hero-mission-hotspot::before {
-  content: "Learn More";
-  position: relative;
-  z-index: 2;
-}
+
 
 .hero-mission-hotspot:hover,
 .hero-mission-hotspot:focus-visible {
