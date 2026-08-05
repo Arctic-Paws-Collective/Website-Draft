@@ -786,10 +786,15 @@
 
 /* =========================================================
    HOME PAGE REVISION 4
-   Compact "Look Beyond the Finish Line" on mobile
+   Fix mobile hero/button boundary and compact intro section
    ========================================================= */
 
 @media (max-width: 640px) {
+
+  .v1-hero {
+    overflow: visible;
+    margin-bottom: 10px;
+  }
 
   section.section.editorial-intro {
     margin: 0 !important;
@@ -818,15 +823,5 @@
   section.editorial-intro .text-link {
     display: inline-block;
     margin-top: 0 !important;
-  }
-}
-
-  .editorial-intro .lead {
-    font-size: 1rem;
-    margin-bottom: 8px;
-  }
-
-  .editorial-intro p {
-    margin-bottom: 10px;
   }
 }
