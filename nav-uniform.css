@@ -98,3 +98,29 @@ body.tradition-approved .brand-hotspot,body.tradition-approved .nav-hotspot,body
 .site-header .site-nav a:focus-visible {
   color: #ffffff !important;
 }
+/* Alaska & History — switch to dedicated mobile page image */
+.mobile-history-image{
+  display:none !important;
+}
+
+@media(max-width:768px){
+
+  body.tradition-approved .desktop-history-image,
+  body.tradition-approved .approved-image-crop{
+    display:none !important;
+  }
+
+  body.tradition-approved .mobile-history-image{
+    display:block !important;
+    width:100% !important;
+    height:auto !important;
+    margin:0 !important;
+  }
+
+  body.tradition-approved .approved-page{
+    width:100% !important;
+    min-width:0 !important;
+    margin-top:58px !important;
+    overflow:hidden !important;
+  }
+}
