@@ -783,3 +783,27 @@
 .hero-mission-hotspot::after {
   display: none !important;
 }
+/* Home mobile — compact Look Beyond the Finish Line section */
+@media (max-width: 640px) {
+  .section.editorial-intro {
+    margin-top: 0;
+    padding: 32px 22px 36px;
+    gap: 14px;
+  }
+
+  .editorial-intro h2 {
+    margin-bottom: 8px;
+    font-size: 2rem;
+    line-height: 1.05;
+  }
+
+  .editorial-intro .lead {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+    line-height: 1.45;
+  }
+
+  .editorial-intro p {
+    margin-bottom: 12px;
+  }
+}
