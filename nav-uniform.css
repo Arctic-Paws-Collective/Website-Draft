@@ -82,3 +82,19 @@ body.tradition-approved .brand-hotspot,body.tradition-approved .nav-hotspot,body
 @media(max-width:900px){
   body.tradition-approved .approved-page{margin-top:58px !important}
 }
+/* =========================================================
+   UNIFORM SITE HEADER
+   Keep all navigation labels white on every page
+   ========================================================= */
+
+.site-header .site-nav a,
+.site-header .site-nav a:visited,
+.site-header .site-nav a.active,
+.site-header .site-nav a[aria-current="page"] {
+  color: #ffffff !important;
+}
+
+.site-header .site-nav a:hover,
+.site-header .site-nav a:focus-visible {
+  color: #ffffff !important;
+}
