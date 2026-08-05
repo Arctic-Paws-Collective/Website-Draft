@@ -754,6 +754,7 @@
 
 @media (max-width: 640px) {
   .hero-mission-hotspot {
+    top: 83%;
     font-size: 0.64rem;
     letter-spacing: 0.08em;
   }
