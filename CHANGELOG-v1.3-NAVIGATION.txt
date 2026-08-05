@@ -1,0 +1,26 @@
+Arctic Paws Collective — Navigation Standardization v1.3
+Date: 2026-08-05
+
+Modified:
+- index.html
+- mission.html
+- tradition.html
+- care.html
+- life-beyond-racing.html
+- retirement.html
+- sponsors.html
+- contact.html
+- Added nav-uniform.css
+
+Changes:
+- Standardized the logo, primary links, active-page indicator, and hamburger button.
+- Added the same mobile dropdown behavior to every primary navigation page.
+- Ensured every primary page loads script.js.
+- Restored functional navigation on Sponsors and Alaska & History.
+- On mobile Alaska & History, hid the obsolete image-based navigation/header region and displayed the real standardized header.
+
+Intentionally unchanged:
+- Page copy
+- Approved page imagery
+- Home hero images
+- Main page layouts and section content
