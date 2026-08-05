@@ -1,0 +1,24 @@
+ARCTIC PAWS COLLECTIVE — DESKTOP v1.2 INTEGRATION
+
+Base preserved: Website-Draft-main GitHub ZIP.
+
+Installed approved pages:
+- index.html — approved Home from GitHub base
+- mission.html — approved About / Mission Preview v6.0
+- tradition.html — approved Alaska & History visual rebuild
+- care.html — approved Canine Care Draft 5
+- life-beyond-racing.html — approved Life Beyond Racing Draft 3
+- retirement.html — approved Retirement Draft 9
+- sponsors.html — approved Sponsors & Partners Draft 6
+- contact.html — existing Contact page retained
+
+Site-wide changes:
+- Primary navigation standardized to Home, About, Alaska & History, Canine Care, Life Beyond Racing, Retirement, Sponsors, Contact.
+- Obsolete navigation entries removed.
+- Review/draft banners removed from integrated pages.
+- Draft wording removed from browser titles and footers.
+
+Intentionally unchanged:
+- Approved desktop page content, imagery, typography, and section order.
+- Mobile redesign deferred to a separate version.
+- Legacy HTML files remain in the package as rollback/reference files but are not linked from primary navigation.

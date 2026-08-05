@@ -1,4 +1,4 @@
 Arctic Paws Collective
-Version 1.0
-Internal Review Draft
-August 2026
+Desktop Integration Version 1.2
+Build: 2026-08-05
+Status: Desktop approved pages integrated; mobile optimization deferred.
