@@ -103,7 +103,7 @@
 
 .hero-mission-hotspot {
   position: absolute;
-  z-index: 200;
+  z-index: 40;
   display: block;
   left: 2.6%;
   top: 83%;
