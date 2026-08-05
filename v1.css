@@ -836,3 +836,33 @@
     margin-top: 2px;
   }
 }
+/* =========================================================
+   HOME PAGE REVISION 4
+   Compact "Look Beyond the Finish Line" on mobile
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+  .editorial-intro {
+    gap: 24px;
+  }
+
+  .section.editorial-intro {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+
+  .editorial-intro h2 {
+    font-size: 1.9rem;
+    margin-bottom: 6px;
+  }
+
+  .editorial-intro .lead {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+
+  .editorial-intro p {
+    margin-bottom: 10px;
+  }
+}
