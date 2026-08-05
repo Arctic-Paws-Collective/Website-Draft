@@ -1,0 +1,27 @@
+Arctic Paws Collective — Navigation Revision v1.3.1
+
+Updated primary pages:
+- index.html
+- mission.html
+- tradition.html
+- care.html
+- life-beyond-racing.html
+- retirement.html
+- sponsors.html
+- contact.html
+
+Changes:
+- Standardized one shared header and logo across all primary pages.
+- Added the same mobile hamburger menu and dropdown behavior everywhere.
+- Preserved horizontal desktop navigation.
+- Corrected active-page navigation states.
+- Ensured script.js is loaded on every primary page.
+- Alaska & History now uses the real shared header on desktop and mobile.
+- Removed obsolete invisible hotspot navigation from Alaska & History.
+- Cropped the old baked-in image header while preserving the approved page artwork below it.
+
+Intentionally unchanged:
+- Page copy
+- Approved imagery except for presentation crop of the Alaska & History baked-in header
+- Home hero and dedicated mobile hero
+- Main page layouts and content sections

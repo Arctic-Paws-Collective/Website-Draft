@@ -1,0 +1,66 @@
+{
+  "index.html": {
+    "header_count": 1,
+    "toggle_count": 1,
+    "site_nav_count": 1,
+    "nav_css_v2": true,
+    "script_js": true,
+    "active_correct": true
+  },
+  "mission.html": {
+    "header_count": 1,
+    "toggle_count": 1,
+    "site_nav_count": 1,
+    "nav_css_v2": true,
+    "script_js": true,
+    "active_correct": true
+  },
+  "tradition.html": {
+    "header_count": 1,
+    "toggle_count": 1,
+    "site_nav_count": 1,
+    "nav_css_v2": true,
+    "script_js": true,
+    "active_correct": true
+  },
+  "care.html": {
+    "header_count": 1,
+    "toggle_count": 1,
+    "site_nav_count": 1,
+    "nav_css_v2": true,
+    "script_js": true,
+    "active_correct": true
+  },
+  "life-beyond-racing.html": {
+    "header_count": 1,
+    "toggle_count": 1,
+    "site_nav_count": 1,
+    "nav_css_v2": true,
+    "script_js": true,
+    "active_correct": true
+  },
+  "retirement.html": {
+    "header_count": 1,
+    "toggle_count": 1,
+    "site_nav_count": 1,
+    "nav_css_v2": true,
+    "script_js": true,
+    "active_correct": true
+  },
+  "sponsors.html": {
+    "header_count": 1,
+    "toggle_count": 1,
+    "site_nav_count": 1,
+    "nav_css_v2": true,
+    "script_js": true,
+    "active_correct": true
+  },
+  "contact.html": {
+    "header_count": 1,
+    "toggle_count": 1,
+    "site_nav_count": 1,
+    "nav_css_v2": true,
+    "script_js": true,
+    "active_correct": true
+  }
+}
