@@ -824,3 +824,50 @@
     display: inline-block;
     margin-top: 0 !important;
   }
+/* =========================================================
+   HOME PAGE REVISION 5
+   Dedicated mobile hero image
+   ========================================================= */
+
+.v1-hero-picture {
+  display: block;
+  width: 100%;
+}
+
+.v1-hero-picture img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+}
+
+@media (max-width: 640px) {
+  .v1-hero {
+    height: auto;
+    min-height: 0;
+    margin-top: 58px;
+    overflow: hidden;
+  }
+
+  .v1-hero-picture,
+  .v1-hero-picture img {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-mission-hotspot {
+    left: 5.2%;
+    top: 45.5%;
+    width: 30%;
+    height: 5.5%;
+    min-width: 118px;
+    min-height: 38px;
+    padding: 0 8px;
+    font-size: 0.62rem;
+    line-height: 1;
+    letter-spacing: 0.06em;
+    white-space: nowrap;
+  }
+}
