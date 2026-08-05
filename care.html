@@ -249,8 +249,60 @@ h2{
   color:#6d7d82;
 }
 .dark .photo-credit{color:#91a5aa}
+
+ .nav-toggle{
+  display:none;
+}
+  
 @media(max-width:900px){
-  .site-nav{display:none}
+ .site-header{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:1000;
+  min-height:58px;
+  padding:8px 14px;
+  background:rgba(6,27,36,.98);
+}
+
+.nav-toggle{
+  display:block;
+  background:none;
+  border:0;
+  color:#fff;
+  font-size:1.35rem;
+  cursor:pointer;
+}
+
+.site-nav{
+  position:absolute;
+  top:58px;
+  left:12px;
+  right:12px;
+  display:none;
+  flex-direction:column;
+  align-items:stretch;
+  gap:0;
+  padding:12px;
+  background:rgba(6,27,36,.98);
+  border-radius:14px;
+  box-shadow:0 16px 35px rgba(0,0,0,.28);
+}
+
+.site-nav.open{
+  display:flex;
+}
+
+.site-nav a{
+  width:100%;
+  padding:12px 10px;
+  border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.site-nav a:last-child{
+  border-bottom:0;
+}
   .hero{min-height:74vh}
   .split,.split.reverse,.vet-layout,.retirement-copy{grid-template-columns:1fr}
   .life-grid{grid-template-columns:1fr}
@@ -443,5 +495,7 @@ h2{
 <div><strong>Arctic Paws Collective</strong><br/>Care · Connection · Arctic Fortitude</div>
 <div>Canine Care</div>
 </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
