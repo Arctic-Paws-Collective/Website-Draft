@@ -659,11 +659,48 @@ h2{
   }
 }
 
-@media(max-width:560px){
-  .pace-card img{
-    height:220px;
+
+/* =========================================================
+RETIREMENT PAGE REVISION
+Desktop image framing + lower section alignment
+========================================================= */
+
+@media (min-width: 901px) {
+
+  /* Show the entire stretching dog */
+  .stretch-photo {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+    object-position: center !important;
+    display: block !important;
+  }
+
+  /* Align lower text panel and photo */
+  .promise-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    align-items: stretch !important;
+    gap: 0 !important;
+  }
+
+  .promise-copy {
+    margin: 0 !important;
+    padding: 74px 6vw !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Show more of the left side of dog/person photo */
+  .bond-photo {
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 430px !important;
+    object-fit: cover !important;
+    object-position: 35% center !important;
+    display: block !important;
   }
 }
+
 </style>
 <link href="nav-uniform.css?v=2" rel="stylesheet"/></head>
 <body>
