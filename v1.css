@@ -897,19 +897,21 @@ HOME PAGE REVISION 7
 Mobile sled dog wellness image sizing
 Desktop unchanged
 ========================================================= */
-
 @media (max-width: 640px) {
   .wellness-photo-card {
     padding: 0 !important;
+    margin-top: 16px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    display: block !important;
     overflow: hidden;
-    height: 300px;
   }
 
   .wellness-photo-card img {
     display: block;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    object-fit: contain;
     object-position: center;
   }
 }
