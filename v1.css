@@ -892,3 +892,24 @@ Desktop only
     object-position: center;
   }
 }
+/* =========================================================
+HOME PAGE REVISION 7
+Mobile sled dog wellness image sizing
+Desktop unchanged
+========================================================= */
+
+@media (max-width: 640px) {
+  .wellness-photo-card {
+    padding: 0 !important;
+    overflow: hidden;
+    height: 300px;
+  }
+
+  .wellness-photo-card img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
