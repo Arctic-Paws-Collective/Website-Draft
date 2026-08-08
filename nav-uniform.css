@@ -124,3 +124,77 @@ body.tradition-approved .brand-hotspot,body.tradition-approved .nav-hotspot,body
     overflow:hidden !important;
   }
 }
+/* =========================================================
+   UNIFORM SITE FOOTER — FINAL
+   Applies consistently across all pages
+   ========================================================= */
+
+.uniform-footer {
+  background: #061b24 !important;
+  color: #ffffff !important;
+  padding: 42px 6vw 30px !important;
+  margin: 0 !important;
+  width: 100% !important;
+  border-top: 1px solid rgba(255,255,255,0.10) !important;
+}
+
+.uniform-footer-inner {
+  width: 100% !important;
+  max-width: 1600px !important;
+  margin: 0 auto !important;
+}
+
+.footer-social {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  gap: 28px !important;
+  margin: 0 0 30px !important;
+  width: 100% !important;
+}
+
+.footer-social a {
+  color: rgba(255,255,255,0.78) !important;
+  text-decoration: none !important;
+  font-size: 0.95rem !important;
+  font-weight: 400 !important;
+}
+
+.footer-social a:hover,
+.footer-social a:focus-visible {
+  color: #ffffff !important;
+}
+
+.uniform-footer .copyright {
+  display: block !important;
+  margin: 0 !important;
+  padding: 24px 0 0 !important;
+  border-top: 1px solid rgba(255,255,255,0.12) !important;
+  color: rgba(255,255,255,0.58) !important;
+  font-size: 0.9rem !important;
+  text-align: left !important;
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+
+  .uniform-footer {
+    padding: 32px 22px 24px !important;
+  }
+
+  .footer-social {
+    justify-content: flex-start !important;
+    gap: 20px !important;
+    margin-bottom: 24px !important;
+    flex-wrap: wrap !important;
+  }
+
+  .footer-social a {
+    font-size: 0.9rem !important;
+  }
+
+  .uniform-footer .copyright {
+    padding-top: 20px !important;
+    font-size: 0.82rem !important;
+  }
+}
