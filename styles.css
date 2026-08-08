@@ -149,3 +149,16 @@
     font-size: 0.82rem;
   }
 }
+/* =========================================================
+   SITE-WIDE FOOTER REVISION 2
+   Desktop social links aligned right
+   ========================================================= */
+
+@media (min-width: 641px) {
+
+  .footer-social {
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+}
