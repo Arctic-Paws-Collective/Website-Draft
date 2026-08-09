@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="description" content="Alaska sled dog history, winter transportation, remote communities, the 1925 Serum Run, and the enduring partnership between people and sled dogs."/>
+<meta name="version" content="Alaska & History v2.0 — approved desktop + responsive mobile"/>
+<title>Arctic Paws Collective — Alaska &amp; History</title>
+<link href="nav-uniform.css?v=4" rel="stylesheet"/>
+<style>
+:root{
+  --history-ink:#172831;
+  --history-deep:#10232d;
+  --history-paper:#f7f5f0;
+  --history-cream:#eee8dc;
+  --history-line:#d8d5ce;
+  --history-gold:#bd8a37;
+  --history-white:#fff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body.history-page{
+  margin:0;
+  background:var(--history-paper);
+  color:var(--history-ink);
+  font-family:Arial,Helvetica,sans-serif;
+  line-height:1.7;
+  overflow-x:hidden;
+}
+.history-main{margin-top:68px}
+.history-hero{
+  position:relative;
+  min-height:560px;
+  display:flex;
+  align-items:center;
+  padding:72px 6vw;
+  overflow:hidden;
+  background:
+    linear-gradient(90deg,rgba(8,25,34,.72) 0%,rgba(8,25,34,.38) 42%,rgba(8,25,34,.08) 72%),
+    url("assets/images/history-hero-public-domain.jpg") center 48% / cover no-repeat;
+}
+.history-hero-copy{
+  position:relative;
+  z-index:1;
+  max-width:760px;
+  padding:30px 34px;
+  background:rgba(16,35,45,.78);
+  color:#fff;
+}
+.history-hero h1{
+  margin:0 0 12px;
+  font:500 clamp(3rem,5vw,5.4rem)/1 Georgia,"Times New Roman",serif;
+}
+.history-hero p{
+  margin:0;
+  font:400 clamp(1.15rem,1.5vw,1.5rem)/1.4 Georgia,"Times New Roman",serif;
+}
+.history-split{
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  min-height:500px;
+}
+.history-split.reverse{grid-template-columns:.95fr 1.05fr}
+.history-split.reverse .history-media{order:2}
+.history-split.reverse .history-copy{order:1}
+.history-media{
+  min-height:500px;
+  overflow:hidden;
+  background:#111;
+}
+.history-media img{
+  display:block;
+  width:100%;
+  height:100%;
+  min-height:500px;
+  object-fit:cover;
+}
+.history-copy{
+  padding:70px clamp(42px,6vw,96px);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  background:var(--history-paper);
+}
+.history-copy.dark{
+  background:var(--history-deep);
+  color:#fff;
+}
+.history-copy h2,.history-community h2,.history-timeline h2{
+  margin:0 0 18px;
+  font:500 clamp(2rem,3vw,3rem)/1.08 Georgia,"Times New Roman",serif;
+}
+.history-copy p{margin:0 0 14px;max-width:720px}
+.more-transportation img{
+  object-fit:contain;
+  object-position:center center;
+}
+.winter-lifelines img{object-position:center center}
+.history-community{
+  padding:72px 5vw 84px;
+  background:var(--history-cream);
+}
+.history-community-intro{
+  text-align:center;
+  max-width:880px;
+  margin:0 auto 36px;
+}
+.history-community-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+  max-width:1500px;
+  margin:0 auto;
+}
+.history-card{
+  background:#fff;
+  border:1px solid #e5e1d9;
+}
+.history-card .history-card-image{
+  height:310px;
+  overflow:hidden;
+  background:#111;
+}
+.history-card img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  filter:grayscale(100%);
+}
+.history-card:nth-child(3) img{
+  object-fit:contain;
+  background:#111;
+}
+.history-card .caption{padding:22px 24px 26px}
+.history-card h3{
+  margin:0 0 8px;
+  font:500 1.3rem/1.2 Georgia,"Times New Roman",serif;
+}
+.history-card p{margin:0;color:#59666d;font-size:.95rem}
+.serum-run img{
+  object-fit:contain;
+  object-position:center center;
+  filter:grayscale(100%);
+}
+.history-timeline{
+  background:#eef1f2;
+  color:var(--history-ink);
+  padding:62px clamp(28px,6vw,90px) 68px;
+}
+.history-timeline-inner{max-width:980px;margin:0 auto}
+.history-timeline h2{text-align:center;margin-bottom:34px}
+.serum-timeline{position:relative;display:grid}
+.serum-timeline::before{
+  content:"";
+  position:absolute;
+  top:10px;
+  bottom:10px;
+  left:50%;
+  width:3px;
+  transform:translateX(-50%);
+  background:var(--history-gold);
+}
+.timeline-row{
+  display:grid;
+  grid-template-columns:1fr 64px 1fr;
+  align-items:center;
+  min-height:112px;
+}
+.timeline-place{
+  padding-right:28px;
+  text-align:right;
+  font-family:Georgia,"Times New Roman",serif;
+  line-height:1.08;
+}
+.timeline-place strong{display:block;font-size:1.45rem}
+.timeline-place span{
+  display:block;
+  margin-top:5px;
+  font-size:1.05rem;
+  font-family:Arial,Helvetica,sans-serif;
+}
+.timeline-dot{
+  position:relative;
+  z-index:2;
+  width:26px;
+  height:26px;
+  margin:auto;
+  border:4px solid var(--history-gold);
+  border-radius:50%;
+  background:#eef1f2;
+  box-shadow:0 0 0 4px #eef1f2;
+}
+.timeline-note{
+  padding-left:28px;
+  font-size:1.05rem;
+  line-height:1.35;
+  font-weight:600;
+}
+.tradition-lives img{
+  object-position:center center;
+  filter:grayscale(100%);
+}
+.history-closing{
+  min-height:430px;
+  overflow:hidden;
+  background:#111;
+}
+.history-closing img{
+  display:block;
+  width:100%;
+  height:430px;
+  object-fit:cover;
+  object-position:center 48%;
+  filter:grayscale(100%);
+}
+
+/* Responsive mobile version: same approved content, no flattened mobile artwork. */
+@media(max-width:900px){
+  .history-main{margin-top:58px}
+  .history-hero{
+    min-height:500px;
+    padding:42px 22px;
+    align-items:flex-end;
+    background-position:center center;
+  }
+  .history-hero-copy{
+    width:100%;
+    padding:24px;
+  }
+  .history-hero h1{font-size:clamp(2.6rem,12vw,4rem)}
+  .history-split,
+  .history-split.reverse{
+    grid-template-columns:1fr;
+    min-height:0;
+  }
+  .history-split.reverse .history-media,
+  .history-split.reverse .history-copy{order:initial}
+  .history-media{
+    min-height:0;
+    background:#111;
+  }
+  .history-media img{
+    min-height:0;
+    height:auto;
+    max-height:none;
+    object-fit:contain;
+  }
+  .history-copy{
+    padding:42px 24px 48px;
+  }
+  .history-community{
+    padding:48px 18px 54px;
+  }
+  .history-community-grid{
+    grid-template-columns:1fr;
+    gap:20px;
+  }
+  .history-card .history-card-image{
+    height:auto;
+    min-height:0;
+  }
+  .history-card img,
+  .history-card:nth-child(3) img{
+    height:auto;
+    object-fit:contain;
+  }
+  .history-timeline{
+    padding:48px 16px 54px;
+  }
+  .history-timeline-inner{max-width:620px}
+  .serum-timeline::before{left:42%}
+  .timeline-row{
+    grid-template-columns:38% 34px 1fr;
+    min-height:126px;
+  }
+  .timeline-place{padding-right:12px}
+  .timeline-place strong{font-size:1.15rem}
+  .timeline-place span{font-size:.88rem}
+  .timeline-dot{width:22px;height:22px;border-width:3px}
+  .timeline-note{
+    padding-left:14px;
+    font-size:.94rem;
+  }
+  .history-closing{min-height:0}
+  .history-closing img{
+    height:auto;
+    object-fit:contain;
+  }
+}
+@media(max-width:480px){
+  .history-hero{min-height:430px}
+  .history-hero-copy{padding:20px}
+  .history-hero p{font-size:1.05rem}
+  .history-copy h2,.history-community h2,.history-timeline h2{font-size:2rem}
+  .timeline-row{grid-template-columns:39% 28px 1fr;min-height:132px}
+  .timeline-place{padding-right:8px}
+  .timeline-note{padding-left:10px;font-size:.88rem}
+}
+</style>
+</head>
+<body class="history-page">
+<header class="site-header">
+  <a aria-label="Arctic Paws Collective home" class="brand" href="index.html">
+    <span class="brand-badge">AP</span>
+    <span><strong>Arctic Paws</strong><small>Collective</small></span>
+  </a>
+  <button aria-expanded="false" aria-label="Open menu" class="nav-toggle" type="button">☰</button>
+  <nav aria-label="Primary navigation" class="site-nav">
+    <a href="index.html">Home</a>
+    <a href="mission.html">About</a>
+    <a aria-current="page" class="active" href="tradition.html">Alaska &amp; History</a>
+    <a href="care.html">Canine Care</a>
+    <a href="dogs.html">Meet the Dogs</a>
+    <a href="life-beyond-racing.html">Life Beyond Racing</a>
+    <a href="retirement.html">Retirement</a>
+    <a href="sponsors.html">Sponsors</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main class="history-main" aria-label="Alaska and History">
+  <section class="history-hero">
+    <div class="history-hero-copy">
+      <h1>Alaska &amp; History</h1>
+      <p>Lifelong partnerships forged in the wild.</p>
+    </div>
+  </section>
+
+  <section class="history-split">
+    <div class="history-media more-transportation">
+      <img src="assets/images/history-more-transportation.jpg" alt="Historic sled dog team and mushers in Alaska"/>
+    </div>
+    <div class="history-copy">
+      <h2>More Than Transportation</h2>
+      <p>Long before roads and modern machines, sled dogs were essential to life in Alaska—carrying mail, supplies, and hope across vast and unforgiving landscapes.</p>
+    </div>
+  </section>
+
+  <section class="history-split reverse">
+    <div class="history-media winter-lifelines">
+      <img src="assets/images/history-winter-lifelines.jpg" alt="Historic sled dog team traveling through Alaska"/>
+    </div>
+    <div class="history-copy">
+      <h2>Winter Lifelines</h2>
+      <p>When snow closed in and isolation set, sled dog teams were the lifeline that connected remote communities to the resources and people they needed to survive.</p>
+    </div>
+  </section>
+
+  <section class="history-community">
+    <div class="history-community-intro">
+      <h2>Connecting Remote Communities</h2>
+      <p>Across long distances and harsh winter routes, dog teams carried more than freight. They connected villages, families, mail routes, medicine, news, and daily life.</p>
+    </div>
+    <div class="history-community-grid">
+      <article class="history-card">
+        <div class="history-card-image"><img src="assets/images/history-community-distance.jpg" alt="Dog sled arriving from Iditarod at Knik, Alaska, 1912"/></div>
+        <div class="caption"><h3>Across the Distance</h3><p>Routes stretched between communities separated by hundreds of miles of winter country.</p></div>
+      </article>
+      <article class="history-card">
+        <div class="history-card-image"><img src="assets/images/history-community-mail.jpg" alt="Historical dog sled mail delivery in Nome, Alaska"/></div>
+        <div class="caption"><h3>Mail &amp; Supplies</h3><p>Sled teams carried letters, medicine, food, and essential supplies to communities beyond the road system.</p></div>
+      </article>
+      <article class="history-card">
+        <div class="history-card-image"><img src="assets/images/history-community-connection.jpg" alt="Historical U.S. Mail dog sled team in Alaska"/></div>
+        <div class="caption"><h3>Community Connection</h3><p>Each delivery strengthened the connection between people, settlements, and the wider territory.</p></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="history-split serum-run">
+    <div class="history-media">
+      <img src="assets/images/history-serum-run.jpg" alt="Scotty Allen and his dog team in Nome, Alaska, circa 1900 to 1912"/>
+    </div>
+    <div class="history-copy dark">
+      <h2>When Alaska Needed Them Most — The 1925 Serum Run</h2>
+      <p>A deadly diphtheria outbreak threatened the children of Nome. With the community isolated in winter, dog teams became the critical link in a race to deliver lifesaving antitoxin.</p>
+      <p>The serum left Nenana on January 27, 1925. From there, relay teams carried it through Ruby, Galena, Nulato, Unalakleet, and onward toward Nome—crossing frozen rivers, mountain trails, extreme cold, and brutal weather.</p>
+      <p>After a relay of 20 mushers and nearly 150 dogs traveled a distance spanning 674 miles of Alaska wilderness, the serum arrived in Nome on February 2, 1925.</p>
+    </div>
+  </section>
+
+  <section class="history-timeline">
+    <div class="history-timeline-inner">
+      <h2>Serum Run Timeline</h2>
+      <div class="serum-timeline" aria-label="Serum Run timeline">
+        <div class="timeline-row"><div class="timeline-place"><strong>Nenana</strong><span>0 miles</span></div><div class="timeline-dot" aria-hidden="true"></div><div class="timeline-note">Serum leaves Nenana on January 27, 1925.</div></div>
+        <div class="timeline-row"><div class="timeline-place"><strong>Ruby</strong><span>107 miles</span></div><div class="timeline-dot" aria-hidden="true"></div><div class="timeline-note">First leg completed in extreme cold.</div></div>
+        <div class="timeline-row"><div class="timeline-place"><strong>Galena</strong><span>227 miles</span></div><div class="timeline-dot" aria-hidden="true"></div><div class="timeline-note">Teams push on across frozen rivers and mountain trails.</div></div>
+        <div class="timeline-row"><div class="timeline-place"><strong>Nulato</strong><span>366 miles</span></div><div class="timeline-dot" aria-hidden="true"></div><div class="timeline-note">Halfway point. The relay continues.</div></div>
+        <div class="timeline-row"><div class="timeline-place"><strong>Unalakleet</strong><span>530 miles</span></div><div class="timeline-dot" aria-hidden="true"></div><div class="timeline-note">The final stretch across the ice.</div></div>
+        <div class="timeline-row"><div class="timeline-place"><strong>Nome</strong><span>674 miles</span></div><div class="timeline-dot" aria-hidden="true"></div><div class="timeline-note">Serum arrives in Nome on February 2, 1925. Lives were saved. History was made.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="history-split tradition-lives">
+    <div class="history-media">
+      <img src="assets/images/history-tradition-lives-on.jpg" alt="Man with dog sled at the edge of a snowy forest near Nome, Alaska, circa 1910 to 1912"/>
+    </div>
+    <div class="history-copy dark">
+      <h2>Tradition Lives On</h2>
+      <p>The partnership between mushers and their dogs continues today—honoring the legacy of those who came before and the land that shaped a remarkable way of life.</p>
+    </div>
+  </section>
+
+  <section class="history-closing">
+    <img src="assets/images/history-closing-nome.jpg" alt="Dog sled team on East Front Street, Nome, Alaska, January 1907"/>
+  </section>
+</main>
+
+<footer class="site-footer uniform-footer">
+  <div class="uniform-footer-inner">
+    <div class="footer-social" aria-label="Social media">
+      <a href="#" aria-label="Facebook">Facebook</a>
+      <a href="#" aria-label="Instagram">Instagram</a>
+      <a href="#" aria-label="YouTube">YouTube</a>
+    </div>
+    <p class="copyright">© 2026 Arctic Paws Collective.</p>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
