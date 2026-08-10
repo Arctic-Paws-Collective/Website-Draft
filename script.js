@@ -39,9 +39,8 @@ window.addEventListener("load", function () {
   if (window.location.hash === "#focus") {
 
     history.replaceState(null, "", window.location.pathname);
+    window.scrollTo(0, 0);
 
   }
-
-  window.scrollTo(0, 0);
 
 });
