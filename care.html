@@ -112,7 +112,7 @@ a{color:inherit}
 }
 .hero-link{
   display:inline-flex;
-  margin-top:31px;
+  margin-top:23px;
   padding:14px 21px;
   border:1px solid rgba(158,215,209,.8);
   border-radius:999px;
@@ -313,7 +313,14 @@ h2{
   .hero h1{font-size:3.3rem}
   .section-image,.vet-image{height:310px}
 }
-
+/* Mobile nutrition image - show full photograph */
+@media(max-width:540px){
+  .nutrition-image{
+    height:auto;
+    object-fit:contain;
+    object-position:center;
+  }
+}
 /* Draft 5 — selected veterinary paw examination image */
 .vet-image{
   height:560px;
