@@ -75,7 +75,7 @@
 <label>Email<input name="email" required="" type="email"/></label>
 <label>Subject<input name="subject" type="text"/></label>
 <label>Message<textarea name="message" required="" rows="6"></textarea></label>
-<button type="submit">Send Message</button>
+<button type="button" id="send-message-btn">Send Message</button>
 </form>
 </section>
 </main>
@@ -95,19 +95,25 @@
   </div>
 </footer>
 <script src="script.js"></script>
-<script>
-  document.getElementById('contact-form').addEventListener('submit', function (event) {
-    event.preventDefault();
+   const subject = form.elements['subject'].value.trim() || 'Arctic Paws Collective Website Inquiry';
+    const message = form.elements['message'].value.trim();
 
-    const name = this.elements['name'].value.trim();
-    const email = this.elements['email'].value.trim();
-    const subject = this.elements['subject'].value.trim() || 'Arctic Paws Collective Website Inquiry';
-    const message = this.elements['message'].value.trim();
+    if (!name || !email || !message) {
+      form.reportValidity();
+      return;
+    }
 
-    const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
-    const mailto = `mailto:contact@arcticpawscollective.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const body =
+      `Name: ${name}\n` +
+      `Email: ${email}\n\n` +
+      `Message:\n${message}`;
 
-   window.open(mailto, '_self');
+    const mailto =
+      `mailto:contact@arcticpawscollective.com` +
+      `?subject=${encodeURIComponent(subject)}` +
+      `&body=${encodeURIComponent(body)}`;
+
+    window.location.href = mailto;
   });
 </script>
 </body>
