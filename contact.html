@@ -75,7 +75,7 @@
 <label>Email<input name="email" required="" type="email"/></label>
 <label>Subject<input name="subject" type="text"/></label>
 <label>Message<textarea name="message" required="" rows="6"></textarea></label>
-<button type="button" id="send-message-btn">Send Message</button>
+<a href="mailto:contact@arcticpawscollective.com?subject=Arctic%20Paws%20Collective%20Website%20Inquiry" class="contact-email-button">Send Message</a>
 </form>
 </section>
 </main>
@@ -95,26 +95,5 @@
   </div>
 </footer>
 <script src="script.js"></script>
-   const subject = form.elements['subject'].value.trim() || 'Arctic Paws Collective Website Inquiry';
-    const message = form.elements['message'].value.trim();
-
-    if (!name || !email || !message) {
-      form.reportValidity();
-      return;
-    }
-
-    const body =
-      `Name: ${name}\n` +
-      `Email: ${email}\n\n` +
-      `Message:\n${message}`;
-
-    const mailto =
-      `mailto:contact@arcticpawscollective.com` +
-      `?subject=${encodeURIComponent(subject)}` +
-      `&body=${encodeURIComponent(body)}`;
-
-    window.location.href = mailto;
-  });
-</script>
 </body>
 </html>
