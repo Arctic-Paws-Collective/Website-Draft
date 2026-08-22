@@ -107,7 +107,7 @@
     const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
     const mailto = `mailto:contact@arcticpawscollective.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
-    window.location.href = mailto;
+   window.open(mailto, '_self');
   });
 </script>
 </body>
