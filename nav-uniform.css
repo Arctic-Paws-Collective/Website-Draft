@@ -202,3 +202,32 @@ body.tradition-approved .brand-hotspot,body.tradition-approved .nav-hotspot,body
 /* APC logo sizing fix — v1.4.1 */
 .site-header .brand-logo{display:block !important;width:44px !important;height:44px !important;max-width:44px !important;max-height:44px !important;object-fit:contain !important;flex:0 0 44px !important;}
 @media(max-width:900px){.site-header .brand-logo{width:36px !important;height:36px !important;max-width:36px !important;max-height:36px !important;flex-basis:36px !important;}}
+
+/* =========================================================
+   DONATE NOW — PayPal navigation button — v1.4.2
+   ========================================================= */
+.site-header .site-nav a.donate-nav,
+.site-header .site-nav a.donate-nav:visited {
+  padding: 9px 15px !important;
+  border: 1px solid #9bdad3 !important;
+  border-radius: 6px !important;
+  background: #9bdad3 !important;
+  color: #061b24 !important;
+  font-weight: 800 !important;
+}
+.site-header .site-nav a.donate-nav:hover,
+.site-header .site-nav a.donate-nav:focus-visible {
+  background: #ffffff !important;
+  border-color: #ffffff !important;
+  color: #061b24 !important;
+}
+@media(max-width:900px){
+  .site-header .site-nav a.donate-nav,
+  .site-header .site-nav a.donate-nav:visited {
+    width: 100% !important;
+    margin-top: 8px !important;
+    padding: 12px 10px !important;
+    text-align: center !important;
+    border-bottom: 1px solid #9bdad3 !important;
+  }
+}
