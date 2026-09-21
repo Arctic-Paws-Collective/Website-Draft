@@ -1,0 +1,19 @@
+Arctic Paws Collective — Version 1.5.0
+Date: 2026-09-21
+
+Added
+- New videos.html page.
+- Main headline: “Have A Look For Yourself”.
+- Intro beneath the headline: “See why this world is so inspiring”.
+- “Featured Video” label above the responsive YouTube player.
+- Embedded YouTube video vF5NCu7xBQo using YouTube's privacy-enhanced domain.
+- Description beneath the player: “Arctic Paws Collective Origins”.
+- Direct “Watch on YouTube” link.
+- Responsive desktop and mobile video-page styling.
+
+Navigation
+- Added Videos to the site navigation after Meet the Dogs.
+- Added compact intermediate desktop navigation styling to accommodate the new link.
+
+Preserved
+- Existing page content, imagery, donation link, social links, and site behavior.

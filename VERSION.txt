@@ -1,4 +1,4 @@
 Arctic Paws Collective
-Desktop Integration Version 1.2
-Build: 2026-08-05
-Status: Desktop approved pages integrated; mobile optimization deferred.
+Version 1.5.0 — Videos Page
+Build: 2026-09-21
+Status: Videos page added with featured YouTube video and site-wide navigation link.

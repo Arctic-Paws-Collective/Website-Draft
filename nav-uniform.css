@@ -73,6 +73,13 @@
   .site-header .site-nav a:last-child{border-bottom:0 !important}
   .site-header .site-nav a.active,.site-header .site-nav a[aria-current="page"]{border-bottom-color:#9bdad3 !important}
 }
+
+/* Keep the expanded navigation comfortable after adding Videos — v1.5.0 */
+@media(min-width:901px) and (max-width:1320px){
+  .site-header{gap:16px !important;padding-left:24px !important;padding-right:24px !important}
+  .site-header .site-nav{gap:14px !important}
+  .site-header .site-nav a{font-size:.80rem !important}
+}
 /* Alaska & History: use the real shared header and crop the old image header. */
 body.tradition-approved{overflow-x:hidden !important;background:#07141d !important}
 body.tradition-approved .approved-page{width:100% !important;min-width:0 !important;margin:68px 0 0 !important;overflow:hidden !important}
